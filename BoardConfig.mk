@@ -40,12 +40,12 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS :=  --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --kernel_offset 0x00008000 --second_offset 0x00f00000
-#TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage-dtb
-TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := msm8952-perf_defconfig
-TARGET_KERNEL_SOURCE := kernel/sharp/msm8952
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage-dtb
+#TARGET_KERNEL_ARCH := arm
+#TARGET_KERNEL_CONFIG := msm8952-perf_defconfig
+#TARGET_KERNEL_SOURCE := kernel/sharp/msm8952
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 
 # Partitions
